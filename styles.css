@@ -1,0 +1,165 @@
+@media all and (min-width:481px) {
+    
+    body {
+        padding: 1rm;
+    }
+    
+    #navbar {
+        width: 100%;
+        height: 80px;
+        margin: 0px;
+        max-width: 1000px;
+    }
+    #at {
+        margin: 0px;
+        margin-left: 20px;
+        font-size: 6vw;
+        text-align: left;
+        vertical-align: middle;
+        line-height: 100px;
+        display: inline-block;
+    }
+    .square-img {
+        width: 4vw;
+        height: 4vw;
+        object-fit: cover;
+        vertical-align: middle;
+    }
+}
+
+@media all and (min-width:0px) and (max-width: 480px) {
+    
+    body{
+        padding: 20px;
+    }
+    
+    #nav-holder{
+        min-height: 100px;
+    }
+    
+    #navbar {
+        width: auto;
+        height: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        position: fixed;
+    }
+    #at {
+        margin: 0px;
+        margin-left: 20px;
+        font-size: clamp(50px, 4vw, 100px);
+        text-align: left;
+        vertical-align: middle;
+        line-height: 100px;
+        display: inline-block;
+    }
+    .square-img {
+        width: 8vw;
+        height: 8vw;
+        object-fit: cover;
+        vertical-align: middle;
+    }
+}
+
+.rotate {
+    animation: rotation 10s infinite linear;
+    border-radius: 50%;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+body {
+    background-color: #333333;
+    color: white;
+    font-family: monospace;
+    margin: 0;
+    font-size: 14px;
+}
+
+#middle {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 120px;;
+    margin-bottom: 0;
+    padding: 50px;
+    padding-top: 1px;
+    padding-left: 50px;
+    transition-duration: 1.5s;
+}
+
+
+
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+@media all and (min-width:0px) and (max-width: 480px) {
+    
+    .post h2 {
+        margin: 0px;
+        margin-top: 200px;
+        width: 100%;
+        font-size: 10vw;
+    }
+
+    .post {
+        margin-top: 50px;
+        font-size: clamp(20px, 4vw, 80px);
+    }
+}
+
+@media all and (min-width:481px) {
+    
+    .post h2 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        
+        width: 100%;
+        font-size: clamp(50px, 4vw, 40px);
+    }
+
+    .post {
+        margin-top: 50px;
+        font-size: clamp(20px, 4vw, 80px);
+    }
+}
+
+
+
+
+
+
+
+
+a {
+    color: #FFD3CA;
+    transition: 0.2s;
+}
+
+a:hover {
+    color: indianred;
+}
